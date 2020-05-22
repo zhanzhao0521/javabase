@@ -9,5 +9,4 @@
 **/build.sh
 **/war
 **/.DS_Store
-
-
+**/out
