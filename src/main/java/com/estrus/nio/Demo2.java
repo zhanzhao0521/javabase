@@ -69,13 +69,13 @@ public class Demo2 {
         buf.flip();
         ByteBuffer byteBuffer = ce.encode(buf);
         for (int i=0;i<12;i++){
-            System.out.println(byteBuffer.get());
+            System.out.print(byteBuffer.get());
         }
         byteBuffer.flip();
         CharBuffer decode = cd.decode(byteBuffer);
         System.out.println(decode.toString());
 
-        Charset cs2 = Charset.forName("GBK");
+        Charset cs2 = Charset.forName("UTF-8");
         byteBuffer.flip();
         CharBuffer cb = cs2.decode(byteBuffer);
         System.out.println(cb);
